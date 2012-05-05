@@ -1,0 +1,23 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body{
+	max-width: 1020px;
+}
+
+.left{
+	clear: left;
+	padding-top: 20px;
+	float: left;
+	width: 250px;
+}
+
+.right{
+	/*float: right;*/
+	padding-top: 20px;
+}
+
+#wrapper{
+	border: solid medium #000;
+	width: 850px;
+}
