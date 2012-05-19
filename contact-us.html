@@ -8,8 +8,8 @@
 	</head>
 	<body>
 		<header>
-			<img src="#"> <!--Logo Image goes here-->
-			<h1>Home of the Manatees!</h1>
+			<a href="index.html"><img id="logo" src="images/sles_logo_1.png"></a>
+			<img id="background" src="images/header_bg.png">
 		</header>
 		<nav>
 			<ul>
@@ -18,89 +18,114 @@
 				<li><a href="school-policies.html">Policies</a></li>
 				<li><a href="uniforms-supplies.html">Uniforms</a></li>
 				<li><a href="calendar.html">Calendar</a></li>
-				<li><a href="contact-us.html">Contact</a></li>
+				<li class="on_page">Contact</li>
 			</ul>
 		</nav>
-		<div class="top_left">
-			<h2>Need to contact us?</h2>
-			<p>For school related questions or comments please contact the school via phone or fax:</p>
-			<ul>
-				<li>Phone: (407) 746-1650</li>
-				<li>Fax: (407) 746-1699</li>
-			</ul>
+		<div class="left">
+			<div class="contact">
+				<h2>Need to contact us?</h2><br />
+				<p>For school related questions or comments please contact the school via phone or fax:</p><br />
+				<ul>
+					<li>Phone: (407) 746-1650</li>
+					<li>Fax: (407) 746-1699</li>
+				</ul><br />
+				<p>Comments or question about the website?  Please fill out the form to the right and let us know what you think!</p>
+			</div>
+		
+			<div class="bottom_left">
+				<h2>Here's Our Address:</h2><br />
+				<p>695 Orange Avenue<br />Altamonte Springs, FL 32714</p>
+			</div>
 		</div>
-		<div class="bottom_left">
-			<h2>Here's Our Address:</h2>
-			<p>695 Orange Avenue<br />Altamonte Springs, FL 32714</p>
-		</div>
-		<div class="main">
+		<div class="form">
 			<form method="get" action="mailto:">
 				<fieldset>
 					<legend>Idea? Question? Comment? Let us know!</legend>
-					<div id="fname">
-						<label for="first_name">First Name</label>
-						<input type="text" name="first_name" id="first_name" />
+					<p class="disclaimer">Items noted with an asterisk (*) are required.</p><br />
+					<div class="c1">
+						<div id="fname">
+							<label for="first_name">First Name*</label><br />
+							<input type="text" name="first_name" id="first_name" />
+						</div>
+						<div id="e_mail">
+							<label for="email">Email Address*</label><br />
+							<input type="text" name="email" id="email" />
+						</div>
+						<div id="s_tate">
+							<label for="state">State</label><br />
+							<input type="text" name="state" id="state" />
+						</div>
+						<div id="p_number">
+							<label for="phone">Phone Number</label><br />
+							<input type="text" name="phone" id="phone" />
+						</div>
 					</div>
-					<div id="lname">
-						<label for="last_name">Last Name</label>
-						<input type="text" name="last_name" id="last_name" />
+					<div class="c3">
+						<div id="comment_area">
+							<label for="comments">Comments</label><br />
+							<textarea rows="11" cols="36" name="comments" id="comments"></textarea>
+						</div>
+						<div id="button_area">
+							<button type="submit" name="submit" class="button">Send Email</button>
+						</div>
 					</div>
-					<div id="e_mail">
-						<label for="email">Email Address</label>
-						<input type="text" name="email" id="email" />
-					</div>
-					<div id="c_ity">
-						<label for="city">City</label>
-						<input type="text" name="city" id="city" />
-					</div>
-					<div id="s_tate">
-						<label for="state">State</label>
-						<input type="text" name="state" id="state" />
-					</div>
-					<div id="zipcode">
-						<label for="zip">Zip Code</label>
-						<input type="text" name="zip" id="zip" />
-					</div>
-					<div id="p_number">
-						<label for="phone">Phone Number</label>
-						<input type="text" name="phone" id="phone" />
-					</div>
-					<div id="comment_area">
-						<label for="comments">Comments</label>
-						<textarea rows="15" cols="50" name="comments" id="comments"></textarea>
-					</div>
-					<div id="button_area">
-						<button type="submit" name="submit" class="button">Send Email</button>
+					<div class="c2">
+						<div id="lname">
+							<label for="last_name">Last Name*</label><br />
+							<input type="text" name="last_name" id="last_name" />
+						</div>
+						<div id="c_ity">
+							<label for="city">City</label><br />
+							<input type="text" name="city" id="city" />
+						</div>
+						<div id="zipcode">
+							<label for="zip">Zip Code</label><br />
+							<input type="text" name="zip" id="zip" />
+						</div>
 					</div>
 				</fieldset>
 		</div>
 		<footer>
-			<ul>
-				<li class="heading">Campus</li>
-				<li><a href="#">Our Administration</a></li>
-				<li><a href="#">Registration Information</a></li>
-				<li><a href="#">Guidance</a></li>
-				<li><a href="#">Classrooms</a></li>
-				<li><a href="#">Advisory Council (SAC)</a></li>
-				<li><a href="#">Directory</a></li>
-			</ul>
-			<ul>
-				<li class="heading">Community</li>
-				<li><a href="#">Community Involvement</a></li>
-				<li><a href="#">PTA</a></li>
-				<li><a href="#">Parent Connection</a></li>
-				<li><a href="#">Registration Information</a></li>
-				<li><a href="#">Calendar</a></li>
-				<li><a href="#">Kid Zone</a></li>
-			</ul>
-			<ul>
-				<li class="heading">Seminole Public School District</li>
-				<li><a href="#">SCPS Website</a></li>
-				<li><a href="#">Employment</a></li>
-				<li><a href="#">Transportation</a></li>
-				<li><a href="#">School Board</a></li>
-			</ul>
-			<p>Copyright &copy; 2004 - 2012 Spring Lake Elementary.  All rights reserved.</p>
+			<div id="footer_column_1">
+				<ul>
+					<li><img src="images/footer_header_c1.png"></li>
+					<li><a href=""><img src="images/footer_1_c1.png"></a></li>
+					<li><a href=""><img src="images/footer_2_c1.png"></a></li>
+					<li><a href=""><img src="images/footer_3_c1.png"></a></li>
+					<li><a href=""><img src="images/footer_4_c1.png"></a></li>
+					<li><a href=""><img src="images/footer_5_c1.png"></a></li>
+					<li><a href=""><img src="images/footer_6_c1.png"></a></li>
+				</ul>
+			</div>
+			<div id="footer_column_3">
+				<ul>
+					<li><img src="images/footer_header_c3.png"></li>
+					<li><a href=""><img src="images/footer_1_c3.png"></a></li>
+					<li><a href=""><img src="images/footer_2_c3.png"></a></li>
+					<li><a href=""><img src="images/footer_3_c3.png"></a></li>
+					<li><a href=""><img src="images/footer_4_c3.png"></a></li>
+				</ul>
+			</div>
+			<div id="footer_column_2">
+				<ul>
+					<li><img src="images/footer_header_c2.png"></li>
+					<li><a href=""><img src="images/footer_1_c2.png"></a></li>
+					<li><a href=""><img src="images/footer_2_c2.png"></a></li>
+					<li><a href=""><img src="images/footer_3_c2.png"></a></li>
+					<li><a href=""><img src="images/footer_4_c2.png"></a></li>
+					<li><a href=""><img src="images/footer_5_c2.png"></a></li>
+					<li><a href=""><img src="images/footer_6_c2.png"></a></li>
+				</ul>
+			</div>
+			<div id="photo_credit">
+				<p>Manatee photo by <a href="">Ryan Somma</a></p>
+			</div>
+			<div id="icon_credit">
+				<p><a href="">Stock icons by Iconshock</a></p>
+			</div>
+			<div id="copyright">
+				<p>Copyright &copy; 2004 - 2012 Spring Lake Elementary.  All rights reserved.</p>
+			</div>
 		</footer>
 	</body>
 </html>
